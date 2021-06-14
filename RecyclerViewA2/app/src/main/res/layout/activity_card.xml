@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/CardName"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CardActivity">
+
+    <ImageView
+        android:id="@+id/CartaImagem"
+        android:layout_width="110dp"
+        android:layout_height="109dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.871"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.085"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/CartaNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="nome]"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/CartaImagem"
+        app:layout_constraintHorizontal_bias="0.417"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <TextView
+        android:id="@+id/CartaTipo"
+        android:layout_width="153dp"
+        android:layout_height="52dp"
+        android:text="tipo"
+        app:layout_constraintBottom_toTopOf="@+id/CartaRaridade"
+        app:layout_constraintEnd_toEndOf="@+id/CartaNome"
+        app:layout_constraintHorizontal_bias="0.611"
+        app:layout_constraintStart_toStartOf="@+id/CartaNome"
+        app:layout_constraintTop_toBottomOf="@+id/CartaNome"
+        app:layout_constraintVertical_bias="0.435" />
+
+    <TextView
+        android:id="@+id/CartaTexto"
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <TextView
+        android:id="@+id/ManaCost"
+        android:layout_width="110dp"
+        android:layout_height="53dp"
+        android:text="manacost"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/CartaImagem"
+        app:layout_constraintHorizontal_bias="0.304"
+        app:layout_constraintStart_toStartOf="@+id/CartaImagem"
+        app:layout_constraintTop_toBottomOf="@+id/CartaImagem"
+        app:layout_constraintVertical_bias="0.09" />
+
+    <TextView
+        android:id="@+id/CartaArtista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="artista"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/CartaCor"
+        app:layout_constraintStart_toStartOf="@+id/CartaCor"
+        app:layout_constraintTop_toBottomOf="@+id/CartaCor"
+        app:layout_constraintVertical_bias="0.169" />
+
+    <TextView
+        android:id="@+id/CartaNumero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cartanumero"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ManaCost"
+        app:layout_constraintHorizontal_bias="0.388"
+        app:layout_constraintStart_toStartOf="@+id/ManaCost"
+        app:layout_constraintTop_toBottomOf="@+id/ManaCost"
+        app:layout_constraintVertical_bias="0.145" />
+
+    <TextView
+        android:id="@+id/CartaCor"
+        android:layout_width="20dp"
+        android:layout_height="19dp"
+        android:text="Cor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/CartaNumero"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="@+id/CartaNumero"
+        app:layout_constraintTop_toBottomOf="@+id/CartaNumero"
+        app:layout_constraintVertical_bias="0.094" />
+
+    <TextView
+        android:id="@+id/CartaRaridade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
+        android:text="raridade"
+        app:layout_constraintBottom_toTopOf="@+id/CartaTexto"
+        app:layout_constraintEnd_toEndOf="@+id/CartaTipo"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toStartOf="@+id/CartaTipo" />
+
+    <TextView
+        android:id="@+id/CartaSet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/CartaArtista"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="@+id/CartaArtista"
+        app:layout_constraintTop_toBottomOf="@+id/CartaArtista"
+        app:layout_constraintVertical_bias="0.318" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
